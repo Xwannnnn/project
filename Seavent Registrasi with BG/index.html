@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Seavent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form id="register-form">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="phone">No. Telpon</label>
+            <input type="tel" id="phone" name="phone" placeholder="Masukkan no. telpon Anda" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+            <label for="ticket">Tiket?</label>
+            <div class="ticket-input">
+                <button type="button" id="decrease" class="ticket-button">-</button>
+                <span id="ticket-count">1</span>
+                <button type="button" id="increase" class="ticket-button">+</button>
+            </div>
+
+            <button type="submit" id="pay-button">Bayar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

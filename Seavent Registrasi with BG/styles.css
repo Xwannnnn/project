@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(/images/Picture-Website-Wallpaper-FHD-Free-Download-Laptop-Desktop-Macbook-2510-Wallpaperxyz.com-18.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container, .notification-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #01579b; /* Dark blue for headings */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #81d4fa; /* Light blue border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.ticket-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.ticket-button {
+    background: #81d4fa; /* Light blue buttons */
+    border: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.ticket-button:hover {
+    background: #4fc3f7; /* Darker blue on hover */
+}
+
+.ticket-input span {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #01579b; /* Dark blue for ticket count */
+}
+
+#pay-button {
+    background: #0288d1; /* Dark blue for the pay button */
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+#pay-button:hover {
+    background: #0277bd; /* Darker blue on hover */
+}
+
+.notification-message {
+    font-size: 18px;
+    color: #01579b; /* Dark blue for the notification message */
+}
+
+#back-button {
+    background: #0288d1; /* Dark blue for the back button */
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius:20px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+#back-button:hover {
+    background: #0277bd; /* Darker blue on hover */
+}
+
+.success-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container, .notification-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+        font-size: 14px;
+    }
+
+    .ticket-button {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .ticket-input span {
+        font-size: 16px;
+    }
+
+    #pay-button, #back-button {
+        font-size: 14px;
+    }
+
+    .success-image {
+        width: 80px;
+        height: 80px;
+    }
+}
